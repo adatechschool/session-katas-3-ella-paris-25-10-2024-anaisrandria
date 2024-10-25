@@ -44,7 +44,7 @@ def moreThan10():
         weight_nb = float(weight_split[0])
         if weight_nb >= 10:
             print(pokemons_data[i]["name"], "->", weight_str)
-    return weight_str
+    return weight_nb
 
 moreThan10()
 
@@ -52,6 +52,7 @@ moreThan10()
 # def orderByWeight():
 # weight = moreThan10
 # def orderByWeight():
+#     if weigh
 
 
 
