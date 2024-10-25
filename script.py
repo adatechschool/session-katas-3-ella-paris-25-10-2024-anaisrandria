@@ -37,13 +37,24 @@ for pokemon in all_pokemons:
 print("Nombre de Pokemons :", len(pokemons_data))
 
 #Quels sont ceux dont le poids est supérieur à 10 kg ?
+def moreThan10():
+    for i in range(len(pokemons_data)):
+        weight_str = pokemons_data[i]["weight"]
+        weight_split = weight_str.split(" ", 1)
+        weight_nb = float(weight_split[0])
+        if weight_nb >= 10:
+            print(pokemons_data[i]["name"], "->", weight_str)
+    return weight_str
+
+moreThan10()
+
+# Ecrire une fonction qui permet de les classer par ordre croissant de poids et afficher le résultat.
+# def orderByWeight():
+# weight = moreThan10
+# def orderByWeight():
 
 
 
-# Afficher toutes les caractéristiques de chaque Pokemon
-# for i in range(len(pokemons_data)):
-#     print("\n🐣", pokemons_data[i])
-#     print("Pokemon name :", pokemons_data[i]["name"])
 
 # Afficher les caractéristiques de chaque Pokemon OKKKK!!!
 # all_pokemons = [Pokemon(pokemon["id"], pokemon["name"], pokemon["type"]) for pokemon in pokemons_data]
